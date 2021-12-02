@@ -1,0 +1,8 @@
+
+<h2>Routing demo</h2>
+<ul>
+  <li *ngFor="let name of names" > <a routerLink="detail/{{name.name}}/{{name.dept}}"> {{name.name}}</a></li>
+</ul>
+
+<router-outlet></router-outlet>
+
