@@ -14,4 +14,9 @@ export class AppComponent {
   ];
 
   title = 'routingDemo28April';
+  isVisible: boolean = true;
+
+  toggleVisibility() {
+    this.isVisible = !this.isVisible;
+  }
 }

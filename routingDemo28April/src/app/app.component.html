@@ -1,8 +1,11 @@
 
 <h2>Routing demo</h2>
+<a routerLink="about">About this app</a>
 <ul>
   <li *ngFor="let name of names" > <a routerLink="detail/{{name.name}}/{{name.dept}}"> {{name.name}}</a></li>
 </ul>
+<button (click)="toggleVisibility()">Toggle</button>
+<div *ngIf="isVisible" name="details">alkfjalfkj</div>
 
 <router-outlet></router-outlet>
 
